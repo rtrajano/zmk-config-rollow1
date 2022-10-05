@@ -60,9 +60,9 @@
  * .-----------------------------------------.                    .-----------------------------------------.
  * |  ESC |   1  |  2   |  3   |  4   |  5   |                    |   6  |   7  |   8  |   9  |   0  | BKSP |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | BTCLR| BT1  | BT2  | BT3  | BT4  | BT5  |                    |  LFT |  DWN |   UP |  RGT |      | ENTER|
+ * | BTCLR| BT1  | BT2  | BT3  | BT4  | BT5  |                    |  LFT |  DWN |   UP |  RGT | PG_UP| ENTER|
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | SHFT |      |      |      |      |      |-------.    .-------|OT_USB|OT_BLE|OT_TOG|      |      | SHFT |
+ * | SHFT |      |      |      |      |      |-------.    .-------|OT_USB|OT_BLE|OT_TOG|      | PG_DN| SHFT |
  * '-----------------------------------------/       /     \      \-----------------------------------------'
  *                          |  ALT |  CMD | /       /       \      \  | Space|  ALT |
  *                          |      |      |/       /         \      \ |      |      |
@@ -73,8 +73,8 @@
  */
                         bindings = <
    &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5            &kp N6         &kp N7         &kp N8       &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT &trans &kp ENTER
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans            &out OUT_USB   &out OUT_BLE   &out OUT_TOG &trans    &trans &kp RSHFT
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT &kp PG_UP &kp ENTER
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans            &out OUT_USB   &out OUT_BLE   &out OUT_TOG &trans    &kp PG_DN &kp RSHFT
                                         &kp LALT     &kp LGUI     &trans            &trans         &kp SPACE &kp RALT
                             >;
 

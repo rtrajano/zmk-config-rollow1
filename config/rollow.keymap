@@ -88,7 +88,7 @@
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | CTRL |BRI_UP|BRI_DN| Prev | Next | PG_UP|                    |   -  |   =  |   {  |   }  |   |  |   `  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | SHFT |OT_USB|OT_BLE|OT_TOG|      | PG_DN|-------.    .-------|   _  |   +  |   [  |   ]  |   \  |   ~  |
+ * | SHFT |OT_USB|OT_BLE|OT_TOG|SH_WDN| PG_DN|-------.    .-------|   _  |   +  |   [  |   ]  |   \  |   ~  |
  * '-----------------------------------------/       /     \      \-----------------------------------------'
  *                          | Play | CMD  | /       /       \      \  | SPACE|  ALT |
  *                          | Paus |      |/       /         \      \ |      |      |
@@ -98,9 +98,9 @@
  *   Encoder Right: VOL_UP <-> VOL_D
  */
                         bindings = <
-    &kp  ESC  &kp EXCL      &kp AT         &kp HASH      &kp DLLR   &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-    &kp LCTRL &kp C_BRI_UP  &kp C_BRI_DN   &kp C_PREV    &kp C_NEXT &kp PG_UP   &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE &kp GRAVE
-    &kp LSHFT &out OUT_USB  &out OUT_BLE   &out OUT_TOG  &trans     &kp PG_DN   &kp UNDER &kp PLUS  &kp LBKT        &kp RBKT &kp BSLH &kp TILDE
+    &kp  ESC  &kp EXCL      &kp AT         &kp HASH      &kp DLLR                           &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+    &kp LCTRL &kp C_BRI_UP  &kp C_BRI_DN   &kp C_PREV    &kp C_NEXT                         &kp PG_UP   &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE &kp GRAVE
+    &kp LSHFT &out OUT_USB  &out OUT_BLE   &out OUT_TOG  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp PG_DN   &kp UNDER &kp PLUS  &kp LBKT        &kp RBKT &kp BSLH &kp TILDE
                                    &kp LGUI &kp LGUI  &trans      &trans    &kp SPACE &kp RALT
                         >;
    

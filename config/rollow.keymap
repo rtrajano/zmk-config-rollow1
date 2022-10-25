@@ -64,7 +64,7 @@
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | SHFT |      |      |      |      |      |-------.    .-------|      | PG_DN| PG_UP|      |   "  | SHFT |
  * '-----------------------------------------/       /     \      \-----------------------------------------'
- *                          |  ALT |  CMD | /       /       \      \  | Space|  ALT |
+ *                          |  ALT |  CMD | /       /       \  ALT \  | Space|  ALT |
  *                          |      |      |/       /         \      \ |      |      |
  *                          '-------------''------'           '------''-------------'
  * 
@@ -75,7 +75,7 @@
    &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5            &kp N6         &kp N7         &kp N8       &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT &kp SQT &kp ENTER
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans            &trans         &kp PG_DN      &kp PG_UP    &trans    &kp DQT &kp RSHFT
-                                        &kp LALT     &kp LGUI     &trans            &trans         &kp SPACE &kp RALT
+                                        &kp LALT     &kp LGUI     &trans            &kp RALT       &kp SPACE      &kp RALT
                             >;
 
                             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
@@ -90,7 +90,7 @@
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | SHFT |OT_USB|OT_BLE|OT_TOG|SH_WDN|      |-------.    .-------|   _  |   +  |   [  |   ]  |   \  |   ~  |
  * '-----------------------------------------/       /     \      \-----------------------------------------'
- *                          | Play | CMD  | /       /       \      \  | SPACE|  ALT |
+ *                          | Play | CMD  | / ALT   /       \      \  | SPACE|  ALT |
  *                          | Paus |      |/       /         \      \ |      |      |
  *                          '------------''------'            '------''-------------'
  *
@@ -101,7 +101,7 @@
     &kp  ESC  &kp EXCL      &kp AT         &kp HASH      &kp DLLR                           &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
     &kp LCTRL &kp C_BRI_UP  &kp C_BRI_DN   &kp C_PREV    &kp C_NEXT                         &trans   &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE &kp GRAVE
     &kp LSHFT &out OUT_USB  &out OUT_BLE   &out OUT_TOG  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans   &kp UNDER &kp PLUS  &kp LBKT        &kp RBKT &kp BSLH &kp TILDE
-                                   &kp LGUI &kp LGUI  &trans      &trans    &kp SPACE &kp RALT
+                                   &kp LGUI &kp LGUI  &kp LALT      &trans    &kp SPACE &kp RALT
                         >;
    
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
